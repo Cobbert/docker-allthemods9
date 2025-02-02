@@ -25,7 +25,7 @@ if ! [[ -f 'Server-Files-1.0.3.zip' ]]; then
 		rm -fr "$DIR_TEST"
 	fi
         curl -Lo mohist-${FORGE_VERSION}-installer.jar https://mohistmc.com/api/v2/projects/mohist/${MC_VERSION}/builds/latest/download
- 	echo "java -jar mohist-${FORGE_VERSION}-installer.jar" > run.sh
+ 	echo "java -jar @user_jvm_args.txt mohist-${FORGE_VERSION}-installer.jar" > run.sh
 
 
  
